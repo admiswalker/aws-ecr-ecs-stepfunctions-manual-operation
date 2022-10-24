@@ -104,6 +104,11 @@ Management console から ECR リポジトリに入り，「プッシュコマ�
 
 - [Fargateを利用したECSの使用方法を確認](https://www.wakuwakubank.com/posts/644-aws-fargate-ecs-basic/)
 
+## Step Functions を S3 の event でトリガーする
+
+- [step functions s3 event 🔍](https://www.google.com/search?q=step+functions+s3+event&oq=step+functions+s3+event)
+  - [EventBridge を使用して、S3 イベント発生時にStep Functionsを実行してみた。](https://dev.classmethod.jp/articles/s3-event-eventbridge-rule-step-functions/)
+  - [​Amazon S3 イベント発生時にステートマシンの実行をスタートする](https://docs.aws.amazon.com/ja_jp/step-functions/latest/dg/tutorial-cloudwatch-events-s3.html)
 
 ## Appendix
 
@@ -112,3 +117,10 @@ Management console から ECR リポジトリに入り，「プッシュコマ�
 - ResourceInitializationError  
   IAM role の権限が足りなかったりすると発生する．まずは admin を付けて動くか確かめて，問題を切り分ける．
 
+----
+
+## やること memo
+
+- S3 にオブジェクトを push したら，StepFunctions を起動するように EventBridge を組む方法の確認
+- StepFunctions から SNS 経由で E-mail を送信する方法の確認
+- Python から StepFunctions へ戻り値の受け渡しの確認
